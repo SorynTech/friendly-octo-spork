@@ -1,7 +1,7 @@
 import time as Rabbit
 import datetime
-now=datetime.now().date()
-Launch_Date= datetime(2026, 3, 20).date()
+now=datetime.date()
+datetime(2026, 3, 20).date()
 invalidinputs=(":3",">:3","",":3c",":P",">:P","blep","Admin","Root","Soryn")
 name=input("What is your name")
 print("Welcome",name)
@@ -19,7 +19,9 @@ def canlaunch():
         print("Welcome")
 canlaunch()
 namecheck()
-if checkedname == "Aspen":
+if now<Launch_Date:
+    print("Please wait till 20.03.2026")
+else:
     print("💛🦈 Welcome to another Application Soryn Made for you 🦈💛")
     Rabbit.sleep(1)
     print("I apologise for all the Bad things I have done and made this to show how much I Loves you and wants to be with you")
