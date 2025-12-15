@@ -28,3 +28,4 @@ if checkedname == "Aspen":
     print("I am just a loving Ferret who wants to be with you")
     Rabbit.sleep(1)
     Pname=input("What name do you want to be refered to as") #this is going to be the name i use in questions and when i refer to Aspen
+    
