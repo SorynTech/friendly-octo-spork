@@ -1,7 +1,15 @@
-import time as Rabbit
+import time as rabbit
 import datetime
-now=datetime.date()
-datetime(2026, 3, 20).date()
+now=datetime.datetime.now().date()
+Launch_Date=datetime.date(2026,3,20)
+#hardcoded test password
+testinput=("what is the password")
+testpassword="Root"
+while testinput != testpassword:
+    print("invalid password")
+    rabbit.sleep(1)
+    testinput=input("enter your password")
+print ("Test password accepted")
 invalidinputs=(":3",">:3","",":3c",":P",">:P","blep","Admin","Root","Soryn")
 name=input("What is your name")
 print("Welcome",name)
@@ -19,15 +27,13 @@ def canlaunch():
         print("Welcome")
 canlaunch()
 namecheck()
-if now<Launch_Date:
-    print("Please wait till 20.03.2026")
-else:
-    print("💛🦈 Welcome to another Application Soryn Made for you 🦈💛")
-    Rabbit.sleep(1)
-    print("I apologise for all the Bad things I have done and made this to show how much I Loves you and wants to be with you")
-    Rabbit.sleep(1)
-    print("I also promise i have changed and am not the same toxic Demon as before")
-    print("I am just a loving Ferret who wants to be with you")
-    Rabbit.sleep(1)
-    Pname=input("What name do you want to be refered to as") #this is going to be the name i use in questions and when i refer to Aspen
-    
+while now != Launch_Date:
+    print("You can Only accses this on the 20/03/2026 if you missed the window Ask Soryn to give you permission to view")
+    exit()
+print("💛🦈 Welcome to another Application Soryn Made for you 🦈💛")
+rabbit.sleep(1)
+print("I apologise for all the Bad things I have done and made this to show how much I Loves you and wants to be with you")
+rabbit.sleep(1)
+print("I also promise i have changed and am not the same toxic Demon as before")
+print("I am just a loving Ferret who wants to be with you")
+rabbit.sleep(1)
