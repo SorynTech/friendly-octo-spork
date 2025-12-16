@@ -2,15 +2,7 @@ import time as rabbit
 import datetime
 now=datetime.datetime.now().date()
 Launch_Date=datetime.date(2026,3,20)
-#hardcoded test password
-testinput=("what is the password")
-testpassword="Root"
-while testinput != testpassword:
-    print("invalid password")
-    rabbit.sleep(1)
-    testinput=input("enter your password")
-print ("Test password accepted")
-invalidinputs=(":3",">:3","",":3c",":P",">:P","blep","Admin","Root","Soryn")
+invalidinputs=(":3",">:3","",":3c",";3",":P",">:P","blep","Admin","Root","Soryn")
 name=input("What is your name")
 print("Welcome",name)
 def namecheck():
@@ -37,3 +29,10 @@ rabbit.sleep(1)
 print("I also promise i have changed and am not the same toxic Demon as before")
 print("I am just a loving Ferret who wants to be with you")
 rabbit.sleep(1)
+print("so this is another quiz on how much you love me")
+rabbit.sleep(1)
+loveamount=int(input("please input an answer between 1 and 100 on how much you love soryn"))
+while loveamount > 100:
+    rabbit.sleep(1)
+    loveamount=int(input("please input an answer between 1 and 100 on how much you love soryn"))
+print("Confirmed")
